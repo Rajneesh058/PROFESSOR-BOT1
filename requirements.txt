@@ -12,3 +12,7 @@ psutil
 youtube_search_python
 requests
 ytthumb
+ffmpeg
+ffprobe
+ffmpeg-python
+gtts
