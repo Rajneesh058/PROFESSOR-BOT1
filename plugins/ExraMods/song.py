@@ -36,8 +36,8 @@ def a(update, message):
         "postprocessors": [
             {
                 "key": "FFmpegExtractAudio",
-                "preferredcodec": "mp3",
-                "preferredquality": "320",
+                "preferredcodec": "mp3,m4a",
+                "preferredquality": "240",
             }
         ],
         "outtmpl": "downloads/%(track)s.mp3" ,
@@ -48,9 +48,9 @@ def a(update, message):
         while len(results) == 0 and count < 6:
             if count>0:
                 time.sleep(1)
-            results = YoutubeSearch(query, max_results=1).to_dict()
+            results = YoutubeSearch(query, max_results=4).to_dict()
             count += 1
-        # results = YoutubeSearch(query, max_results=1).to_dict()
+        # results = YoutubeSearch(query, max_results=4).to_dict()
         try:
             link = f"https://youtube.com{results[0]['url_suffix']}"
             # print(results)
