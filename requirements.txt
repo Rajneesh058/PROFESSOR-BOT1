@@ -1,3 +1,13 @@
 git+https://github.com/MKN-BOTZ/pyrogram         
 tgcrypto
-
+yt_dlp
+youtube-dl
+requests
+youtube_search
+os
+aiohttp
+asyncio
+math
+time
+wget
+aiofiles
