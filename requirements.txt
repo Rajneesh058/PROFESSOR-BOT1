@@ -7,8 +7,8 @@ wget
 youtube-search-python==1.4.6
 yt-dlp
 youtube_search
-asynciops
-
-util
-
-
+asyncio
+psutil
+youtube_search_python
+requests
+ytthumb
