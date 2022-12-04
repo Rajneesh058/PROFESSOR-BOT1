@@ -48,7 +48,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_video("https://graph.org/file/7fa4cd4810f348a779ca6.mp4")
+        m=await message.reply_video("https://user-images.githubusercontent.com/114851821/205498431-1fcc54a3-d9e1-49e0-90b9-413e1773376e.gif")
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -99,7 +99,7 @@ InlineKeyboardButton("ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Movie
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_video("https://graph.org/file/7fa4cd4810f348a779ca6.mp4")
+        m=await message.reply_video("https://user-images.githubusercontent.com/114851821/205498431-1fcc54a3-d9e1-49e0-90b9-413e1773376e.gif")
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
