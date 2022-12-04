@@ -41,7 +41,7 @@ async def start(client, message):
             InlineKeyboardButton("➕️ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("ꜱᴇᴀʀᴄʜ ɪɴʟɪɴᴇ", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("🎭ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ🎭", url="https://t.me/Movie_Megaverse_official")
+            InlineKeyboardButton("ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Movie_Megaverse_official")
             ],[      
             InlineKeyboardButton("ℹ️ʜᴇʟᴘℹ️", callback_data="help"),
             InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
@@ -92,7 +92,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton("ꜱᴇᴀʀᴄʜ ɪɴʟɪɴᴇ", switch_inline_query_current_chat=''), 
 
-InlineKeyboardButton("🎭ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ🎭", url="https://t.me/Movie_Megaverse_official")
+InlineKeyboardButton("ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Movie_Megaverse_official")
             ],[      
             InlineKeyboardButton("ℹ️ʜᴇʟᴘℹ️", callback_data="help"),
             InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
