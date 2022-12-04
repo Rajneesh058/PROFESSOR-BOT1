@@ -28,7 +28,7 @@ def time_to_seconds(time):
 @Client.on_message(filters.command('song') & ~filters.private & ~filters.channel)
 def song(client, message):
 
-    user_id = message.from_user.id 
+    user_id = message.id 
     user_name = message.from_user.first_name 
     rpk = "["+user_name+"](tg://user?id="+str(user_id)+")"
 
@@ -37,7 +37,7 @@ def song(client, message):
         query += ' ' + str(i)
     print(query)
     m = message.reply("**Searching Your ѕσng...!**")
-    ydl_opts = {"format": "bestaudio[ext=mp3,m4a]"}
+    ydl_opts = {"format": "bestaudio[ext=mp3]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
