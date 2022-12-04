@@ -25,6 +25,12 @@
 - [x] ids and User info 
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
 - [x] Spelling Check Feature
+- [x] Movie, Song, Yt video Download
+- [x] photo Editor
+- [x] Pin, Kick, block, user in Chat
+- [x] Edit Font Of Your Text
+- [x] Text To Speach 
+- [x] Telegraph Link For Files
 
 ## Variables
 
@@ -72,30 +78,42 @@ python3 bot.py
 
 ## Commands
 ```
-• /logs - to get the rescent errors
-• /stats - to get status of files in db.
-* /filter - add manual filters
-* /filters - view filters
-* /connect - connect to PM.
-* /disconnect - disconnect from PM
-* /del - delete a filter
-* /delall - delete all filters
-* /deleteall - delete all index(autofilter)
-* /delete - delete a specific file from index.
-* /info - get user info
-* /id - get tg ids.
-* /imdb - fetch info from imdb.
-• /users - to get list of my users and ids.
-• /chats - to get list of the my chats and ids 
-• /index  - to add files from a channel
-• /leave  - to leave from a chat.
-• /disable  -  do disable a chat.
-* /enable - re-enable chat.
-• /ban  - to ban a user.
-• /unban  - to unban a user.
-• /channel - to get list of total connected channels
-• /broadcast - to broadcast a message to Ajax users
+/start - check bot alive
+/ping - pong
+/song - To download Mp3 Songs
+/video - To download Video From Yt
+/settings - get settings 
+/logs - to get the rescent errors
+/stats - to get status of files in db.
+/filter - add manual filters
+/filters - view filters
+/connect - connect to PM.
+/disconnect - disconnect from PM
+/del - delete a filter
+/delall - delete all filters
+/deleteall - delete all index(autofilter)
+/delete - delete a specific file from index.
+/info - get user info
+/id - get tg ids.
+/imdb - fetch info from imdb.
+/users - to get list of my users and ids.
+/chats - to get list of the my chats and ids 
+/index  - to add files from a channel
+/leave  - to leave from a chat.
+/disable  -  do disable a chat.
+/enable - re-enable chat.
+/ban_user  - to ban a user.
+/unban_user  - to unban a user.
+/channel - to get list of total connected channels
+/broadcast - to broadcast a message to all FP BOT users
+/font - to change the font of your text
+/carbon - edit your image with your text.
+/tts - text to speech 
+/json - do download bot json
+/telegraph - reply me with this command to get link of image
+/purge - to delete all replied message 
 ```
 
 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 👉 [Rajneesh Singh Tomar ](https://t.me/Rajneesh_Singh_Tomar)                                                                                                                                                                                 
-𝙲𝙷𝙰𝙽𝙽𝙴𝙻 👉 [Filmy Pitara](https://t.me/FILMY_PITARA)
+𝙲𝙷𝙰𝙽𝙽𝙴𝙻 👉 [Movie Megaverse](https://t.me/Movie_Megaverse_Official)
+Demo Bot 👉 [Megaverse Bot](https://t.me/movie_f_bot)
