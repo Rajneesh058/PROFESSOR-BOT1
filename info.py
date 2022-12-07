@@ -24,7 +24,7 @@ API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+CACHE_TIME = int(environ.get('CACHE_TIME', 100000000000))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS' ,'https://ibb.co/5MPY7qS https://ibb.co/CBHvfmr https://ibb.co/3TdBmTW https://ibb.co/jw6kDdZ https://ibb.co/yndX31k https://ibb.co/v4TJJ8Z https://ibb.co/NrZ6hmd  https://telegra.ph/Pic-11-16-3 https://telegra.ph/Pic2-11-16 https://telegra.ph/Pic-3-11-16 https://telegra.ph/Pic-4-11-16')).split()
 BOT_START_TIME = time()
@@ -72,7 +72,7 @@ MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
-PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
+PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 #log srt
