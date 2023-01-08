@@ -3,6 +3,7 @@ tgcrypto
 youtube-dl
 youtube_search
 aiofiles
+git+https://github.com/cinemagoer/cinemagoer
 wget
 youtube-search-python==1.4.6
 yt-dlp
