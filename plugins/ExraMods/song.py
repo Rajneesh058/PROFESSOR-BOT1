@@ -20,7 +20,7 @@ def song(client, message):
     message.delete()
     user_id = message.from_user.id
     user_name = message.from_user.first_name
-    chutiya = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
+    chutiya = "[" + user_name + "](t.me://user?id=" + str(user_id) + ")"
 
     query = ""
     for i in message.command[1:]:
