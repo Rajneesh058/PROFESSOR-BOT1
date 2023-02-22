@@ -31,6 +31,6 @@ pytz
 youtube-search
 youtube-search-python
 yt-dlp
-
-
-
+ffmpeg
+ffprobe
+ffmpeg-python
