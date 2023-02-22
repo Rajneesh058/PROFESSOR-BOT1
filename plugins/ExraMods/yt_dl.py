@@ -50,7 +50,7 @@ async def song(client, message):
             secmul *= 60
         await message.reply_audio(
             audio_file,
-            caption=cap,            
+            caption=rep,            
             quote=False,
             title=title,
             duration=dur,
