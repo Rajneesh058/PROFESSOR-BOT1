@@ -18,7 +18,7 @@ async def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = await message.reply(f"**ѕєαrchíng чσur ѕσng...!\n {query}**")
+    m = await message.reply(f"**» sᴇᴀʀᴄʜɪɴɢ, ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ...**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -34,9 +34,9 @@ async def song(client, message):
         views = results[0]["views"]
     except Exception as e:
         print(str(e))
-        return await m.edit("**𝙵𝙾𝚄𝙽𝙳 𝙽𝙾𝚃𝙷𝙸𝙽𝙶 𝙿𝙻𝙴𝙰𝚂𝙴 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝚃𝙷𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙾𝚁 𝙲𝙷𝙴𝙲𝙺 𝚃𝙷𝙴 𝙻𝙸𝙽𝙺**")
+        return await m.edit("**😴 sᴏɴɢ ɴᴏᴛ ғᴏᴜɴᴅ ᴏɴ ʏᴏᴜᴛᴜʙᴇ.**\n\n» ᴍᴀʏʙᴇ ᴛᴜɴᴇ ɢᴀʟᴀᴛ ʜɪ ʟɪᴋʜᴀ ʜᴏɢᴀ, ᴩᴀᴅʜᴀɪ - ʟɪᴋʜᴀɪ ᴛᴏʜ ᴋᴀʀᴛᴀ ɴᴀʜɪ ʜᴀɪ ᴛᴜ !")
                 
-    await m.edit("**dσwnlσαdíng чσur ѕσng...!**")
+    await m.edit("» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ...\n\nᴩʟᴇᴀsᴇ ᴡᴀɪᴛ...")
     try:
         with YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -59,7 +59,7 @@ async def song(client, message):
         )            
         await m.delete()
     except Exception as e:
-        await m.edit("**🚫 𝙴𝚁𝚁𝙾𝚁 🚫**")
+        await m.edit(f"**» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ​ » [sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ](t.me/{SUPPORT_CHAT}) 💕**\n\**ᴇʀʀᴏʀ :** {e}")
         print(e)
     try:
         os.remove(audio_file)
@@ -82,7 +82,7 @@ def get_text(message: Message) -> [None,str]:
 @Client.on_message(filters.command(["video", "mp4"]))
 async def vsong(client, message: Message):
     urlissed = get_text(message)
-    pablo = await client.send_message(message.chat.id, f"**𝙵𝙸𝙽𝙳𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚅𝙸𝙳𝙴𝙾** `{urlissed}`")
+    pablo = await client.send_message(message.chat.id, f"sᴇᴀʀᴄʜɪɴɢ, ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ... `{urlissed}`")
     if not urlissed:
         return await pablo.edit("Invalid Command Syntax Please Check help Menu To Know More!")     
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
@@ -112,7 +112,7 @@ async def vsong(client, message: Message):
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url, download=True)
     except Exception as e:
-        return await pablo.edit_text(f"**𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙵𝚊𝚒𝚕𝚎𝚍 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗..♥️** \n**Error :** `{str(e)}`")       
+        return await pablo.edit_text(f"**😴 sᴏɴɢ ɴᴏᴛ ғᴏᴜɴᴅ ᴏɴ ʏᴏᴜᴛᴜʙᴇ.**\n\n» ᴍᴀʏʙᴇ ᴛᴜɴᴇ ɢᴀʟᴀᴛ ʜɪ ʟɪᴋʜᴀ ʜᴏɢᴀ, ᴩᴀᴅʜᴀɪ - ʟɪᴋʜᴀɪ ᴛᴏʜ ᴋᴀʀᴛᴀ ɴᴀʜɪ ʜᴀɪ ᴛᴜ !")       
     
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""**𝚃𝙸𝚃𝙻𝙴 :** [{thum}]({mo})\n**𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 :** {message.from_user.mention}"""
@@ -125,8 +125,14 @@ async def vsong(client, message: Message):
         thumb=sedlyf,
         caption=capy,
         supports_streaming=True,        
-        reply_to_message_id=message.id 
-    )
+        progress_args=(
+            pablo,
+            c_time,
+            f"» ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\nᴜᴩʟᴏᴀᴅɪɴɢ `{urlissed}` ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ sᴇʀᴠᴇʀs...💫",
+            file_stark,
+        ),
+)
+
     await pablo.delete()
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
