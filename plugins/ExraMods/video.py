@@ -39,7 +39,6 @@ def get_text(message: Message) -> [None, str]:
 @Client.on_message(filters.command(["mp4", "video"]))
 async def ytmusic(client, message: Message):
     urlissed = get_text(message)
-    await message.delete()
     user_id = message.from_user.id
     user_name = message.from_user.first_name
     chutiya = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
