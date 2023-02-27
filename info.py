@@ -43,7 +43,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-START_MESSAGE = environ.get('START_MESSAGE', 'Hᴇʏ {user},\n\nI ᴀᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴏᴠɪᴇ🎭 ꜰɪɴᴅᴇʀ & ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ🤖\nCʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ\nᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Rajneesh_Singh_Tomar')
+START_MESSAGE = environ.get('START_MESSAGE', 'Hᴇʏ {user},\n\nI ᴀᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴏᴠɪᴇ🎭 ꜰɪɴᴅᴇʀ & ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ🤖\n\nCʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ\n\nᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Rajneesh_Singh_Tomar')
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
  
@@ -63,7 +63,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mkn_bots_updates')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "🤗 ʜᴇʟʟᴏ...👋\n\nFILE :  {file_name}...\n\nsize :  {file_size}...\nʜᴇʀᴇ'ꜱ ᴛʜᴇ 🎭ᴍᴏᴠɪᴇ🎭 ᴡʜɪᴄʜ ʏᴏᴜ  ᴀꜱᴋᴇᴅ ꜰᴏʀ...\n\nᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ᴜᴘʟᴏᴀᴅᴇᴅ ꜰʀᴏᴍ - @Movie_Megaverse_Official...\n\nᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ -  EPIC Creation Bots")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "🤗 ʜᴇʟʟᴏ...👋\nFILE :  {file_name}...\nsize :  {file_size}...\nʜᴇʀᴇ'ꜱ ᴛʜᴇ 🎭ᴍᴏᴠɪᴇ🎭 ᴡʜɪᴄʜ ʏᴏᴜ  ᴀꜱᴋᴇᴅ ꜰᴏʀ...")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
