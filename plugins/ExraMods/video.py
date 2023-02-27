@@ -58,7 +58,7 @@ async def ytmusic(client, message: Message):
     fridayz = mio[0]["id"]
     thums = mio[0]["channel"]
     kekme = f"https://img.youtube.com/vi/{fridayz}/hqdefault.jpg"
-    await asyncio.sleep(0.2)
+    await asyncio.sleep(0.01)
     url = mo
     sedlyf = wget.download(kekme)
     opts = {
