@@ -1323,8 +1323,8 @@ async def auto_filter(client, msg, spoll=False):
             <b>🏷 Title</b>: 
             <a> href={url}>{title}</a>
             🎭 Genres: {genres}
-            📆 Year: <a href={url}/releaseinfo>{year}</a>
-            🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+            📆 Year: <a> href={url}/releaseinfo>{year}</a>
+            🌟 Rating: <a> href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
             ☀️ Languages : <code>{languages}</code>
             📀 RunTime: {runtime} Minutes
             📆 Release Info : {release_date}
@@ -1398,8 +1398,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             requested = message.from_user.mention,
             query = search,
             title = imdb['title'],
-            votes = imdb<b>🏷 Title</b>: 
-            <a> href={url}>{title}</a>
+            votes = imdb<b>🏷 Title</b>:<a href={url}>{title}</a>
             🎭 Genres: {genres}
            📆 Year: <a href={url}/releaseinfo>{year}</a>
            🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
