@@ -1317,43 +1317,43 @@ async def auto_filter(client, msg, spoll=False):
     TEMPLATE = settings['template']
     if imdb:
         cap = TEMPLATE.format(
-            group = message.chat.title,
-            requested = message.from_user.mention,
-            query = search,
-            title = imdb['title'],
-            votes = imdb['votes'],
-            aka = imdb["aka"],
-            seasons = imdb["seasons"],
-            box_office = imdb['box_office'],
-            localized_title = imdb['localized_title'],
-            kind = imdb['kind'],
-            imdb_id = imdb["imdb_id"],
-            cast = imdb["cast"],
-            runtime = imdb["runtime"],
-            countries = imdb["countries"],
-            certificates = imdb["certificates"],
-            languages = imdb["languages"],
-            director = imdb["director"],
-            writer = imdb["writer"],
-            producer = imdb["producer"],
-            composer = imdb["composer"],
-            cinematographer = imdb["cinematographer"],
-            music_team = imdb["music_team"],
-            distributors = imdb["distributors"],
-            release_date = imdb['release_date'],
-            year = imdb['year'],
-            genres = imdb['genres'],
-            poster = imdb['poster'],
-            plot = imdb['plot'],
-            rating = imdb['rating'],
-            url = imdb['url'],
+            \ngroup = message.chat.title,
+            \nrequested = message.from_user.mention,
+            \nquery = search,
+            \ntitle = imdb['title'],
+            \nvotes = imdb['votes'],
+            \naka = imdb["aka"],
+            \nseasons = imdb["seasons"],
+            \nbox_office = imdb['box_office'],
+            \nlocalized_title = imdb['localized_title'],
+            \nkind = imdb['kind'],
+            \nimdb_id = imdb["imdb_id"],
+            \ncast = imdb["cast"],
+            \nruntime = imdb["runtime"],
+            \ncountries = imdb["countries"],
+            \ncertificates = imdb["certificates"],
+            \nlanguages = imdb["languages"],
+            \ndirector = imdb["director"],
+            \nwriter = imdb["writer"],
+            \nproducer = imdb["producer"],
+            \ncomposer = imdb["composer"],
+            \ncinematographer = imdb["cinematographer"],
+            \nmusic_team = imdb["music_team"],
+            \ndistributors = imdb["distributors"],
+            \nrelease_date = imdb['release_date'],
+            \nyear = imdb['year'],
+            \ngenres = imdb['genres'],
+            \nposter = imdb['poster'],
+            \nplot = imdb['plot'],
+            \nrating = imdb['rating'],
+            \nurl = imdb['url'],
             **locals()
         )
     else:
         cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption="IMDB_TEMPLATE", reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
@@ -1449,7 +1449,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption="IMDB_TEMPLATE", reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
