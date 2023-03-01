@@ -1320,40 +1320,21 @@ async def auto_filter(client, msg, spoll=False):
             group = message.chat.title,
             requested = message.from_user.mention,
             query = search,
-            title = imdb['title'],
-            votes = imdb['votes'],
-            aka = imdb["aka"],
-            seasons = imdb["seasons"],
-            box_office = imdb['box_office'],
-            localized_title = imdb['localized_title'],
-            kind = imdb['kind'],
-            imdb_id = imdb["imdb_id"],
-            cast = imdb["cast"],
-            runtime = imdb["runtime"],
-            countries = imdb["countries"],
-            certificates = imdb["certificates"],
-            languages = imdb["languages"],
-            director = imdb["director"],
-            writer = imdb["writer"],
-            producer = imdb["producer"],
-            composer = imdb["composer"],
-            cinematographer = imdb["cinematographer"],
-            music_team = imdb["music_team"],
-            distributors = imdb["distributors"],
-            release_date = imdb['release_date'],
-            year = imdb['year'],
-            genres = imdb['genres'],
-            poster = imdb['poster'],
-            plot = imdb['plot'],
-            rating = imdb['rating'],
-            url = imdb['url'],
-            **locals()
+            <b>🏷 Title</b>: 
+            <a> href={url}>{title}</a>
+            🎭 Genres: {genres}
+            📆 Year: <a href={url}/releaseinfo>{year}</a>
+            🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+            ☀️ Languages : <code>{languages}</code>
+            📀 RunTime: {runtime} Minutes
+            📆 Release Info : {release_date}
+            🎛 Countries : <code>{countries}</code>
         )
     else:
         cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=IMDB_TEMPLATE, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
@@ -1417,39 +1398,21 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             requested = message.from_user.mention,
             query = search,
             title = imdb['title'],
-            votes = imdb['votes'],
-            aka = imdb["aka"],
-            seasons = imdb["seasons"],
-            box_office = imdb['box_office'],
-            localized_title = imdb['localized_title'],
-            kind = imdb['kind'],
-            imdb_id = imdb["imdb_id"],
-            cast = imdb["cast"],
-            runtime = imdb["runtime"],
-            countries = imdb["countries"],
-            certificates = imdb["certificates"],
-            languages = imdb["languages"],
-            director = imdb["director"],
-            writer = imdb["writer"],
-            producer = imdb["producer"],
-            composer = imdb["composer"],
-            cinematographer = imdb["cinematographer"],
-            music_team = imdb["music_team"],
-            distributors = imdb["distributors"],
-            release_date = imdb['release_date'],
-            year = imdb['year'],
-            genres = imdb['genres'],
-            poster = imdb['poster'],
-            plot = imdb['plot'],
-            rating = imdb['rating'],
-            url = imdb['url'],
-            **locals()
+            votes = imdb<b>🏷 Title</b>: 
+            <a> href={url}>{title}</a>
+            🎭 Genres: {genres}
+           📆 Year: <a href={url}/releaseinfo>{year}</a>
+           🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+           ☀️ Languages : <code>{languages}</code>
+           📀 RunTime: {runtime} Minutes
+           📆 Release Info : {release_date}
+           🎛 Countries : <code>{countries}</code>
         )
     else:
         cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=IMDB_TEMPLATE, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
