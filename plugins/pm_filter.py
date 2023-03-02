@@ -1317,6 +1317,9 @@ async def auto_filter(client, msg, spoll=False):
     TEMPLATE = settings['template']
     if imdb:
         cap = TEMPLATE.format(
+            group = message.chat.title,
+
+            requested = message.from_user.mention,
             query=search,
             title=imdb['title'],
             votes=imdb['votes'],
@@ -1411,6 +1414,9 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
     TEMPLATE = IMDB_TEMPLATE
     if imdb:
         cap = TEMPLATE.format(
+            group = message.chat.title,
+
+            requested = message.from_user.mention,
             query=search,
             title=imdb['title'],
             votes=imdb['votes'],
