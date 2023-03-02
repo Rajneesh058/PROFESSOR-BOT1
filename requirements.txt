@@ -39,7 +39,18 @@ wheel
 ujson
 wget
 pytz
-
+youtube-search
+youtube-search-python
+yt-dlp
+ffmpeg
+ffprobe
+ffmpeg-pythonpy-tgcalls
+python-dotenvyoutube-search
+youtube-search-python
+yt-dlp
+ffmpeg
+ffprobe
+ffmpeg-python
 
 
 
