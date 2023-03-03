@@ -871,9 +871,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('ᴇxᴛʀᴀ ᴍᴏᴅꜱ', callback_data='extra'),  
-
             InlineKeyboardButton('𝚂𝙷𝙰𝚁𝙴-𝚃𝙴𝚇𝚃', callback_data='sharetxt'), 
-
             InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata')            
             ],[
             InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
@@ -881,11 +879,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct')
             ],[    
             InlineKeyboardButton('sᴏɴɢs', callback_data='songs'),
-
             InlineKeyboardButton('ᴠɪᴅᴇᴏ', callback_data='video'),
-
             InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
-           
             ],[           
             InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
             InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss'),           
@@ -1351,7 +1346,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"<b>📁 Found</b> {total_results} <b>Files For</b> {search} \n\n<i>⚡ Uploaded By</i> @F_pitara"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -1447,7 +1442,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             **locals()
         )
     else:
-        cap = f"<b>📁 Found</b> {total_results} <b>Files For</b> {search} \n\n<i>⚡ Uploaded By</i> @F_Pitara"
+        cap = f"<b>📁 Found</b> {total_results} <b>Files For</b> {search} \n\n<i>⚡ Uploaded By</i> @F_pitara"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
