@@ -1406,7 +1406,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             [InlineKeyboardButton(text="📄 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
     imdb = await get_poster(search) if IMDB else None
-    TEMPLATE = IMDB_TEMPLATE
+    TEMPLATE = settings['template']
     if imdb:
         cap = TEMPLATE.format(
             group = message.chat.title,
