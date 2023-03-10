@@ -2,9 +2,9 @@
   "name": "Megaverse_bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "__init__.py",
   "scripts": {
-    "start": "node index.js"
+    "start": "__init__.py"
   },
   "repository": {
     "type": "git",
