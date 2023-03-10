@@ -1,5 +1,5 @@
 {
-  "name": "starter-express-api",
+  "name": "Megaverse_bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cyclic-software/starter-express-api.git"
+    "url": "git+https://github.com/Rajneesh058/Megaverse_bot.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cyclic-software/starter-express-api/issues"
+    "url": "https://github.com/Rajneesh058/Megaverse_bot/issues"
   },
   "homepage": "https://github.com/cyclic-software/starter-express-api#readme",
   "dependencies": {
