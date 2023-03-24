@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/105805201/192936277-dcc0fa25-a8d1-41c8-8039-00d383ea56c7.jpg" alt="Ajax Techz">
+  <img src="https://graph.org/file/e8a93db57425e8cd7d417.jpg" alt="Ajax Techz">
 </p>
 <h1 align="center">
   <b>Movie-Finder-bot</b>
